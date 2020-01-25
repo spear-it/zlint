@@ -18,7 +18,7 @@ import (
 	"testing"
 
 	"github.com/zmap/zlint/lint"
-	"github.com/zmap/zlint/util"
+	"github.com/zmap/zlint/test"
 )
 
 func TestEtsiQcPolicy(t *testing.T) {
@@ -30,8 +30,7 @@ func TestEtsiQcPolicy(t *testing.T) {
 		"dnsNameWildcardCorrect.pem":               lint.NA,
 	}
 	for inputPath, expected := range m {
-		inputPath = "../../testlint/testCerts/" + inputPath
-		out := lint.Lints["e_qcstatem_qcpolicy_valid"].Execute(util.ReadCertificate(inputPath))
+		out := test.TestLint("e_qcstatem_qcpolicy_valid", inputPath)
 
 		if out.Status != expected {
 			t.Errorf("%s: expected %s, got %s", inputPath, expected, out.Status)
