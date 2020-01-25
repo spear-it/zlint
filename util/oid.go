@@ -92,6 +92,11 @@ var (
 	IdEtsiQcsQctEsign          = asn1.ObjectIdentifier{0, 4, 0, 1862, 1, 6, 1}
 	IdEtsiQcsQctEseal          = asn1.ObjectIdentifier{0, 4, 0, 1862, 1, 6, 2}
 	IdEtsiQcsQctWeb            = asn1.ObjectIdentifier{0, 4, 0, 1862, 1, 6, 3}
+	IdEtsiQcsPidNatural        = asn1.ObjectIdentifier{0, 4, 0, 194112, 1, 0}
+	IdEtsiQcsPidLegal          = asn1.ObjectIdentifier{0, 4, 0, 194112, 1, 1}
+	IdEtsiQcsPidNaturalQscd    = asn1.ObjectIdentifier{0, 4, 0, 194112, 1, 2}
+	IdEtsiQcsPidLegalQscd      = asn1.ObjectIdentifier{0, 4, 0, 194112, 1, 3}
+	IdEtsiQcsPidWeb            = asn1.ObjectIdentifier{0, 4, 0, 194112, 1, 4}
 )
 
 const (
