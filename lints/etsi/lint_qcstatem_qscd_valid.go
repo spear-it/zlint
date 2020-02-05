@@ -12,6 +12,14 @@
  * permissions and limitations under the License.
  */
 
+/**************************************************
+EN 319 411-2 v2.2.2 (2018-04): GEN-6.6.1-03
+Scope: Subscriber
+> [QCP-n-qscd] and [QCP-l-qscd]: The certificate
+> shall include Statement for QSCD
+> (esi4-qcStatement-4) defined in ETSI EN 319 412-5
+**************************************************/
+
 package etsi
 
 import (
